@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Preplify</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      header nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding-left: 80px;
+      }
+      header nav a:hover {
+        color: #007bff;
+      }
+      header div img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+      .image img {
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1; /* Send the background image behind other content */
+        margin: 0;
+        padding: 0;
+        display: block;
+      }
+
+      .about-section {
+        position: relative;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+        max-width: none; /* Limit width for content */
+        margin: 120px auto; /* Center horizontally and add space below the header */
+        border-radius: 10px; /* Rounded edges */
+        /* Add a shadow for depth box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+        z-index: 0; /* Ensure it's above the background but below the header */
+        max-height: 700px;
+        margin-top: 85px;
+      }
+
+      .about-section h1 {
+        font-size: 2.6em;
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 10px;
+      }
+
+      .about-section p {
+        font-size: 1.5em;
+        margin: 15px 0;
+        line-height: 1.6;
+        color: #2c3e50;
+      }
+
+      .about-section .vision,
+      .about-section .motto {
+        margin: 30px 0;
+      }
+
+      .about-section .vision h2,
+      .about-section .motto h2 {
+        font-size: 2.2em;
+        color: #2c3e50;
+        margin-bottom: 10px;
+      }
+
+      footer {
+        background-color: #e2dada;
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-size: 14px;
+        color: black;
+        width: 100%;
+      }
+      .about-section {
+        flex-grow: 1; /* Ensures the main content takes up remaining space */
+      }
+
+      footer div {
+        margin: 10px 20px;
+      }
+      footer .footer-logo,
+      footer .support,
+      footer .companies,
+      footer .contact {
+        margin: 10px 0;
+      }
+      footer .footer-logo p:first-child {
+        font-weight: bold;
+        font-size: 16px;
+      }
+      footer .follow-us img {
+        width: 20px;
+        margin: 0 10px;
+        cursor: pointer;
+      }
+      footer .support p,
+      footer .companies p,
+      footer .contact p {
+        margin: 5px 0;
+      }
+      footer .contact p:first-child {
+        font-weight: bold;
+      }
+      footer .follow-us p:first-child {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div><strong>PREPLIFY</strong></div>
+      <center>
+        <nav>
+          <a href="home.html"
+            >&nbsp&nbsp &nbsp&nbsp;Home &nbsp&nbsp &nbsp&nbsp;</a
+          >
+          <a href="aboutus.html">About Us &nbsp&nbsp &nbsp&nbsp;</a>
+          <a href="courses.html">Courses &nbsp&nbsp &nbsp&nbsp;</a>
+          <a href="quizzes.html">Quizzes &nbsp&nbsp &nbsp&nbsp;</a>
+          <a href="#">Contact Us &nbsp&nbsp &nbsp&nbsp; </a>
+        </nav>
+      </center>
+      <div>
+        <a href="userprofile.html"
+          ><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSLU5_eUUGBfxfxRd4IquPiEwLbt4E_6RYMw&s"
+            alt="User Icon"
+        /></a>
+      </div>
+    </header>
+    <div class="image">
+      <img src="AboutUsBgPic.jpeg" alt="background" />
+    </div>
+    <div class="about-section">
+      <h1>ABOUT US</h1>
+      <p>
+        Welcome to Preplify!<br />
+        We are dedicated in simplifying placement preparation and empowering
+        students to succeed in their careers.
+      </p>
+      <div class="motto">
+        <h2>MISSION</h2>
+        <p>
+          To simplify and enhance placement preparation by offering a
+          comprehensive suite of resources, including interactive courses,
+          quizzes, resume builders, discussion forums, and company-specific
+          insights. We aim to bridge the gap between academic knowledge and
+          industry expectations through innovative solutions and consistent
+          support.
+        </p>
+      </div>
+      <div class="vision">
+        <h2>VISION</h2>
+        <p>
+          To be the leading platform empowering students with the knowledge and
+          confidence needed to excel in their career paths.
+        </p>
+      </div>
+      <div class="motto">
+        <h2>MOTTO</h2>
+        <p>Your Gateway to Career Success!</p>
+        <br /><br /><br />
+      </div>
+    </div>
+    <footer>
+      <div class="footer-logo">
+        <b><p>PREPLIFY</p></b>
+        <p>
+          Simplifying your path to Placement success <br />
+          we empower students with the tools and <br />
+          knowledge to excel in placements.
+        </p>
+      </div>
+      <div class="support">
+        <b><p>Support</p></b>
+        <p>Start Preparation</p>
+        <p>Mock Test Series</p>
+        <p>Contact Us</p>
+        <p>Privacy Policy</p>
+        <p>Terms & Conditions</p>
+      </div>
+      <div class="companies">
+        <b
+          ><center><p>Companies</p></center></b
+        >
+        <p>Accenture</p>
+        <p>Cognizant</p>
+        <p>Capgemini</p>
+        <p>Mindtree</p>
+        <p>Hexaware</p>
+      </div>
+      <div class="companies">
+        <br />
+        <p>HCL</p>
+        <p>TCS</p>
+        <p>Infosys</p>
+        <p>Wipro</p>
+        <p>Deloitte</p>
+      </div>
+      <div class="contact">
+        <b><p>Get In Touch</p></b>
+        <p>Phone: +91 123 4567 890</p>
+        <p>Email: contact@preplify.com</p>
+        <p>Connect with us on WhatsApp / Instagram</p>
+      </div>
+      <div class="follow-us">
+        <b><p>Follow Us On</p></b>
+        <p>
+          <img src="linkedin-svgrepo-com.svg" alt="LinkedIn" />
+          <img src="video-you-tube-youtube-svgrepo-com.svg" alt="YouTube" />
+          <img
+            src="instagram-logo-facebook-2-svgrepo-com.svg"
+            alt="Instagram"
+          />
+          <img src="facebook-fb-social-icon-svgrepo-com.svg" alt="Facebook" />
+          <img src="twitter-svgrepo-com (1).svg" alt="twitter" />
+          <img src="telegram-outline-svgrepo-com.svg" alt="telegram" />
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preplify - Simplifying Placement Preparation</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px; /* Space between menu items */
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        font-size: 16px;
+        margin: 0; /* Optional: Can use margin if needed */
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #5a5a5a;
+        font-weight: 500;
+        padding: 5px 10px; /* Adds space inside the links */
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      header .logo {
+        font-size: 24px;
+        font-weight: 700;
+        color: #5a5a5a;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        font-size: 16px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #5a5a5a;
+        font-weight: 500;
+      }
+
+      .get-started {
+        background-color: #f8d4d4;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #5a5a5a;
+        cursor: pointer;
+      }
+
+      .main-section {
+        text-align: center;
+        padding: 60px 20px;
+        position: relative;
+      }
+
+      .main-section .heading {
+        font-size: 32px;
+        font-weight: 700;
+        color: #5a5a5a;
+        margin: 20px 0;
+      }
+
+      .main-section .subheading {
+        font-size: 18px;
+        color: #5a5a5a;
+        margin-bottom: 40px;
+      }
+
+      .main-section .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .cta-buttons button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+
+      .cta-buttons .login {
+        background-color: #f8d4d4;
+        color: #5a5a5a;
+      }
+
+      .cta-buttons .signup {
+        background-color: #f8d4d4;
+        color: #5a5a5a;
+      }
+
+      .illustration {
+        width: 200px;
+        margin: 20px auto;
+      }
+
+      footer {
+        background-color: #e2dada;
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-size: 14px;
+        color: black;
+        width: 96%;
+      }
+      footer div {
+        margin: 10px 20px;
+      }
+      footer .footer-logo,
+      footer .support,
+      footer .companies,
+      footer .contact {
+        margin: 10px 0;
+      }
+      footer .footer-logo p:first-child {
+        font-weight: bold;
+        font-size: 16px;
+      }
+      footer .follow-us img {
+        width: 20px;
+        margin: 0 10px;
+        cursor: pointer;
+      }
+      footer .support p,
+      footer .companies p,
+      footer .contact p {
+        margin: 5px 0;
+      }
+      footer .contact p:first-child {
+        font-weight: bold;
+      }
+      footer .follow-us p:first-child {
+        font-weight: bold;
+      }
+
+      .background-circles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+
+      .circle {
+        position: absolute;
+        border-radius: 50%;
+        opacity: 0.2;
+      }
+
+      .circle1 {
+        width: 200px;
+        height: 200px;
+        background-color: #f8d4d4;
+        top: 2%;
+        left: 4%;
+      }
+
+      .circle2 {
+        width: 300px;
+        height: 300px;
+        background-color: #c9e7e7;
+        top: 2%;
+        left: 5%;
+      }
+
+      .circle3 {
+        width: 200px;
+        height: 200px;
+        background-color: #f8d4d4;
+        bottom: 20%;
+        right: 10%;
+      }
+
+      .circle4 {
+        width: 200px;
+        height: 200px;
+        background-color: #f8d4d4;
+        bottom: 10%;
+        left: 10%;
+      }
+      .circle5 {
+        width: 200px;
+        height: 200px;
+        background-color: #f8d4d4;
+        bottom: 50%;
+        left: 10%;
+      }
+
+      .homeimg {
+        height: 100px;
+        top: 300%;
+        right: 100%;
+      }
+
+      .main-section {
+        display: grid;
+        place-items: center; /* Centers content both horizontally and vertically */
+        height: 100vh; /* Full viewport height */
+        padding: 0;
+        position: relative;
+      }
+
+      .glass-container {
+        background-color: rgba(255, 255, 255, 0.027);
+        backdrop-filter: blur(50px);
+        height: 300px;
+        border-radius: 0px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: poppins, sans-serif;
+        font-size: 18px;
+        line-height: 185%;
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+        border-left: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      } /* Optional: Add a subtle shadow */
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Preplify</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Quizzes</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="get-started">Get Started</button>
+    </header>
+
+    <section class="main-section">
+      <div class="background-circles">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+        <div class="circle circle4"></div>
+        <div class="circle circle5"></div>
+        <div class="homeimg">
+          <img
+            src="homeimg.png"
+            alt="homeimg"
+            style="float: right"
+            heigth="100%"
+          />
+        </div>
+      </div>
+      <div class="glass-container">
+        <div class="heading">
+          Preplify <br />
+          Simplifying Placement Preparation
+        </div>
+        <div class="subheading">
+          Your confidence grows when you’re ready for anything
+        </div>
+        <div class="cta-buttons">
+          <button class="login">Login</button>
+          <button class="signup">Signup</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-logo">
+        <b><p>PREPLIFY</p></b>
+        <p>
+          Simplifying your path to Placement success <br />
+          we empower students with the tools and <br />
+          knowledge to excel in placements.
+        </p>
+      </div>
+      <div class="support">
+        <b><p>Support</p></b>
+        <p>Start Preparation</p>
+        <p>Mock Test Series</p>
+        <p>Contact Us</p>
+        <p>Privacy Policy</p>
+        <p>Terms & Conditions</p>
+      </div>
+      <div class="companies">
+        <b
+          ><center><p>Companies</p></center></b
+        >
+        <p>Accenture</p>
+        <p>Cognizant</p>
+        <p>Capgemini</p>
+        <p>Mindtree</p>
+        <p>Hexaware</p>
+      </div>
+      <div class="companies">
+        <br />
+        <p>HCL</p>
+        <p>TCS</p>
+        <p>Infosys</p>
+        <p>Wipro</p>
+        <p>Deloitte</p>
+      </div>
+      <div class="contact">
+        <b><p>Get In Touch</p></b>
+        <p>Phone: +91 123 4567 890</p>
+        <p>Email: contact@preplify.com</p>
+        <p>Connect with us on WhatsApp / Instagram</p>
+      </div>
+      <div class="follow-us">
+        <b><p>Follow Us On</p></b>
+        <p>
+          <img src="linkedin-svgrepo-com.svg" alt="LinkedIn" />
+          <img src="video-you-tube-youtube-svgrepo-com.svg" alt="YouTube" />
+          <img
+            src="instagram-logo-facebook-2-svgrepo-com.svg"
+            alt="Instagram"
+          />
+          <img src="facebook-fb-social-icon-svgrepo-com.svg" alt="Facebook" />
+          <img src="twitter-svgrepo-com (1).svg" alt="twitter" />
+          <img src="telegram-outline-svgrepo-com.svg" alt="telegram" />
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

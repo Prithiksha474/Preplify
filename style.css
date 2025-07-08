@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.header {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  text-align: left;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #333; /* Slightly darker text for better visibility */
+  font-weight: bold;
+  text-align: center;
+}
+
+.header p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.header a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.table1 {
+  background-color: #f8d1d1; /* Soft pink background */
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  width: 700px;
+}
+
+.table1 td {
+  padding: 10px;
+}
+
+input[type="text"] {
+  width: 85%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-color: black;
+  box-shadow: 0 0 8px rgba(255, 121, 121, 0.6);
+}
+
+button[type="submit"] {
+  width: 93%;
+  padding: 12px;
+  background-color: #ffbdbd; /* Light pink for the button */
+  border-color: black;
+  border-radius: 8px;
+  color: #ffffff; /* White text */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff7f7f; /* Slightly darker pink on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+button[type="submit"]:active {
+  background-color: #ff4c4c; /* Even darker pink on click */
+  transform: translateY(0); /* Reset lift effect */
+}
+
+.ExistingUser {
+  text-align: right;
+}

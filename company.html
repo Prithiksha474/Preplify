@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company job Posting - Preplify</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      header nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding-left: 80px;
+      }
+      header nav a:hover {
+        color: #007bff;
+      }
+      header div img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        grid-template-rows: auto 1fr auto;
+        min-height: 100vh;
+        margin-top: 60px; /* Push below header */
+      }
+
+      aside {
+        background-color: #f4e9e9;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      aside .menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      aside .menu li {
+        padding: 15px 20px;
+        font-size: 16px;
+        color: #333;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+      }
+
+      aside .menu li i {
+        margin-right: 10px;
+      }
+
+      aside .menu li:hover {
+        background-color: #e0d2d2;
+        color: #000;
+      }
+
+      aside .profile-section {
+        text-align: center;
+        padding: 15px;
+        border-top: 1px solid #ddd;
+      }
+
+      aside .profile-section img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+
+      aside .profile-section span {
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      main h1 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      main p {
+        line-height: 1.6;
+        color: #555;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        font-size: 14px;
+      }
+
+      table th,
+      table td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+      }
+
+      table th {
+        background-color: #f9f1f1;
+        font-weight: bold;
+      }
+
+      footer {
+        grid-column: 1 / span 2; /* Stretch footer across both columns */
+        background-color: #e2dada;
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-size: 14px;
+        color: black;
+      }
+
+      footer div {
+        margin: 10px 20px;
+      }
+
+      footer .footer-logo,
+      footer .support,
+      footer .companies,
+      footer .contact {
+        margin: 10px 0;
+      }
+
+      footer .footer-logo p:first-child {
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      footer .follow-us img {
+        width: 20px;
+        margin: 0 10px;
+        cursor: pointer;
+      }
+
+      footer .support p,
+      footer .companies p,
+      footer .contact p {
+        margin: 5px 0;
+      }
+
+      footer .contact p:first-child {
+        font-weight: bold;
+      }
+
+      footer .follow-us p:first-child {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div><strong>PREPLIFY</strong></div>
+      <center>
+        <nav>
+          <a href="home.html"
+            >&nbsp&nbsp &nbsp&nbsp;Home &nbsp&nbsp &nbsp&nbsp;</a
+          >
+          <a href="aboutus.html">About Us &nbsp&nbsp &nbsp&nbsp;</a>
+          <a href="courses.html">Courses &nbsp&nbsp &nbsp&nbsp;</a>
+          <a href="quizzes.html">Quizzes &nbsp&nbsp &nbsp&nbsp;</a>
+          <a href="#">Contact Us &nbsp&nbsp &nbsp&nbsp; </a>
+        </nav>
+      </center>
+      <div>
+        <a href="userprofile.html"
+          ><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSLU5_eUUGBfxfxRd4IquPiEwLbt4E_6RYMw&s"
+            alt="User Icon"
+        /></a>
+      </div>
+    </header>
+
+    <div class="container">
+      <aside>
+        <ul class="menu">
+          <li><i class="fas fa-home"></i> Dashboard</li>
+          <li><i class="fas fa-calendar-alt"></i> Calendar</li>
+          <li><i class="fas fa-chart-bar"></i> Forms & Charts</li>
+          <li><i class="fas fa-comments"></i> Discussion Forum</li>
+          <li><i class="fas fa-code"></i> Coding Challenges</li>
+          <li><i class="fas fa-file-alt"></i> Resume Maker</li>
+          <li><i class="fas fa-question-circle"></i> Question Patterns</li>
+          <li><i class="fas fa-briefcase"></i> Jobs Posting Section</li>
+          <li><i class="fas fa-briefcase"></i> Internship Posting Section</li>
+          <li><i class="fas fa-user-lock"></i> Authentication</li>
+        </ul>
+        <div class="profile-section">
+          <img src="girlicon.jpeg" alt="Profile" />
+          <span>Zifa Dravin</span>
+        </div>
+      </aside>
+
+      <main>
+        <br />
+        <h1>About Placement Preparation</h1>
+        <p>
+          Placement preparation is a critical phase for students aiming to
+          secure positions at top companies. It involves rigorous preparation,
+          including mastering technical skills, enhancing problem-solving
+          abilities, and developing effective communication.
+        </p>
+        <br />
+        <h2>Details of Placement Preparation</h2>
+        <table>
+          <tr>
+            <th>Field</th>
+            <th>Details</th>
+          </tr>
+          <tr>
+            <td>Preparation Duration</td>
+            <td>12 weeks / 3 months (recommended timeline)</td>
+          </tr>
+          <tr>
+            <td>Qualifications Required</td>
+            <td>
+              Graduate in any branch, Post-Graduate, B.Tech/B.E., M.E/M.Tech,
+              MBA, BCA, Ph.D., etc.
+            </td>
+          </tr>
+          <tr>
+            <td>Target Locations</td>
+            <td>All major cities and global job markets</td>
+          </tr>
+          <tr>
+            <td>Experience Level</td>
+            <td>Fresher or Experienced</td>
+          </tr>
+          <tr>
+            <td>Preparation Resources</td>
+            <td>
+              Online platforms, mock tests, interview guides, coding platforms,
+              etc.
+            </td>
+          </tr>
+        </table>
+      </main>
+
+      <footer>
+        <div class="footer-logo">
+          <b><p>PREPLIFY</p></b>
+          <p>
+            Simplifying your path to Placement success <br />
+            we empower students with the tools and <br />
+            knowledge to excel in placements.
+          </p>
+        </div>
+        <div class="support">
+          <b><p>Support</p></b>
+          <p>Start Preparation</p>
+          <p>Mock Test Series</p>
+          <p>Contact Us</p>
+          <p>Privacy Policy</p>
+          <p>Terms & Conditions</p>
+        </div>
+        <div class="companies">
+          <b
+            ><center><p>Companies</p></center></b
+          >
+          <p>Accenture</p>
+          <p>Cognizant</p>
+          <p>Capgemini</p>
+          <p>Mindtree</p>
+          <p>Hexaware</p>
+        </div>
+        <div class="companies">
+          <br />
+          <p>HCL</p>
+          <p>TCS</p>
+          <p>Infosys</p>
+          <p>Wipro</p>
+          <p>Deloitte</p>
+        </div>
+        <div class="contact">
+          <b><p>Get In Touch</p></b>
+          <p>Phone: +91 123 4567 890</p>
+          <p>Email: contact@preplify.com</p>
+          <p>Connect with us on WhatsApp / Instagram</p>
+        </div>
+        <div class="follow-us">
+          <b><p>Follow Us On</p></b>
+          <p>
+            <img src="linkedin-svgrepo-com.svg" alt="LinkedIn" />
+            <img src="video-you-tube-youtube-svgrepo-com.svg" alt="YouTube" />
+            <img
+              src="instagram-logo-facebook-2-svgrepo-com.svg"
+              alt="Instagram"
+            />
+            <img src="facebook-fb-social-icon-svgrepo-com.svg" alt="Facebook" />
+            <img src="twitter-svgrepo-com (1).svg" alt="twitter" />
+            <img src="telegram-outline-svgrepo-com.svg" alt="telegram" />
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
